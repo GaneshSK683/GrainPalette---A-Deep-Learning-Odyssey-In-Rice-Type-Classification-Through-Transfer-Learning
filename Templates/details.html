@@ -1,0 +1,21 @@
+<!-- templates/details.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirm Image</title>
+</head>
+<body>
+    <h1>Preview Image</h1>
+
+    <img src="{{ image_path }}" alt="Uploaded Image" width="300" />
+    <p>Is this the image you want to classify?</p>
+
+    <form action="/predict" method="POST">
+        <input type="hidden" name="filename" value="{{ filename }}">
+        <button type="submit">Yes, Predict</button>
+    </form>
+
+    <br>
+    <a href="/">Upload a different image</a>
+</body>
+</html>
