@@ -1,0 +1,16 @@
+<!-- templates/results.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Rice Type Prediction</h1>
+
+    <img src="{{ image_path }}" alt="Classified Image" width="300" />
+    <h2>Predicted Rice Type: <span style="color:green;">{{ prediction }}</span></h2>
+
+    <br>
+    <a href="/">Classify Another Image</a>
+</body>
+</html>
